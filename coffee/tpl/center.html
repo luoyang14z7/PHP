@@ -1,0 +1,110 @@
+<div ng-controller="centerCtr" class="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="mylist">
+                    <h4>用户中心</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" ng-click="togCartAndOrder(0)">我的购物车</a></li>
+                        <li><a href="#" ng-click="togCartAndOrder(1)">我的订单</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="col-xs-10">
+                        <div class="mycart" ng-hide="hidecart">
+                            <p class="confirmInfo">确认订单信息</p>
+                            <div class="userInfo bline">
+                                <div class="group">
+                                    <label>&nbsp;收货人:</label>
+                                    <input type="text" name="oname" ng-model="orderInfo.oname"/>
+                                </div>
+                                <div class="group">
+                                    <label>&nbsp;手机号:</label>
+                                    <input type="text" name="ophone" ng-model="orderInfo.ophone"/>
+                                </div>
+                                <div class="group">
+                                    <label>配送地址:</label>
+                                    <input type="text" name="oaddress" ng-model="orderInfo.oaddress"/>
+                                </div>
+                            </div>
+                            <div class="pay bline">
+                                <h4>支付方式</h4>
+                                <ul class="list-inline list-unstyled">
+                                    <li data-value="0">微信支付</li>
+                                    <li data-value="1">支付宝支付</li>
+                                    <li data-value="1">银联支付</li>
+                                </ul>
+                            </div>
+                            <div class="list bline">
+                                <div class="listitem" ng-repeat="list in productdetailt" data-productid="{{list.pid}}">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm ">
+                                            <img class="img-thumbnail" ng-src="{{list.img}}"/>
+                                        </div>
+                                        <div class="col-xs-3 itemname">
+                                            <p ng-bind="list.pname"></p>
+                                        </div>
+                                        <div class="col-xs-2 num">
+                                            <span class="icon" ng-click="add()">+</span>
+                                            <span ng-bind="list.count" data-price="{{list.price}}"></span>
+                                            <span class="icon" ng-click="del()">-</span>
+                                        </div>
+                                        <div class="col-xs-2 allpay">
+                                            ￥:<span ng-bind="list.allprice"></span>
+                                        </div>
+                                        <div class="col-xs-2 ">
+                                            <span class="del" data-did="{{list.did}}" ng-click="delete()">删除</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit bline">
+                                <p class="text-right">共计:<span ng-bind="orderInfo.oprice"></span></p>
+                                <span class="btn pull-right addCar" ng-click="subOrder()">
+                                    提交订单
+                                </span>
+                            </div>
+                        </div>
+                        <div class="myorder" ng-hide="!hidecart">
+                            <div class="top">
+                                <div class="row">
+                                    <div class="col-sm-1 text-center">
+                                        订单号
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        收货人
+                                    </div>
+                                    <div class="col-sm-3 text-center">
+                                        收货地址
+                                    </div>
+                                    <div class="col-sm-1 text-center">
+                                        金额
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        支付方式
+                                    </div>
+                                    <div class="col-sm-2 text-center">
+                                        日期
+                                    </div>
+                                    <div class="col-sm-1 text-center">
+                                        状态
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orderSection">
+                                <div class="row" ng-repeat=" list in orderlist">
+                                    <div class="col-sm-1 text-center" ng-bind="list.oid"></div>
+                                    <div class="col-sm-2 text-center" ng-bind="list.oname"></div>
+                                    <div class="col-sm-3 text-center" ng-bind="list.oaddress"></div>
+                                    <div class="col-sm-1 text-center" ng-bind="list.oprice"></div>
+                                    <div class="col-sm-2 text-center" ng-bind="list.opay"></div>
+                                    <div class="col-sm-2 text-center" ng-bind="list.otime | date:'yyyy-MM-dd HH:mm:ss'"></div>
+                                    <div class="col-sm-1 text-center" ng-bind="list.ostate"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

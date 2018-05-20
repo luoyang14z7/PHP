@@ -1,0 +1,35 @@
+<div ng-controller="pdCtr">
+    <div class="pdsection">
+        <div class="part-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 text-center infobox">
+                        <h1 ng-bind="productdetailt.pname"></h1>
+                        <p ng-bind="productdetailt.ptitle"></p>
+                        <span ng-bind="'￥:'+productdetailt.price"></span>
+                        <span class="btn center-block addCar" ng-click="addcart()" data-product="{{productdetailt.pid}}">加入购物车</span>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 col-xs-12 imgbox">
+                        <img class="img-responsive img-circle center-block" ng-src="{{productdetailt.bmimg}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sx-12">
+                        <p ng-bind="data.pinfo"></p>
+                        <p><label>产地 ：</label>{{productdetailt.pOrigin}}</p>
+                        <p><label>加工方法 ：</label>{{productdetailt.pwork}}</p>
+                        <p><label>风味 ：</label>{{productdetailt.ptasty}}</p>
+                        <p><label>酸度 ：</label>{{productdetailt.pacidity}}</p>
+                        <p><label>醇度 ：</label>{{productdetailt.palcohol}}</p>
+                        <p><label>食品搭配建议：</label>{{productdetailt.pmfood}}</p>
+                        <p><label>类似咖啡 ：</label>{{productdetailt.plike}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

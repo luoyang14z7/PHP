@@ -1,0 +1,35 @@
+.pdsection .part-one .row{
+    margin-top: 6%;
+}
+.pdsection .part-one .infobox{
+    margin-top:9%;
+}
+.pdsection .part-one h1{
+    color:#b89f7a;
+}
+
+.pdsection .part-one .imgbox{
+    margin-top: 15px;
+}
+.pdsection .part-one p{
+    margin-top: 8%;
+    color:#707070;
+}
+.pdsection .part-one span{
+    display: block;
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+.pdsection .part-one .addCar{
+    margin-top: 15px;
+    width: 125px;
+}
+.pdsection .part-two{
+    margin-top: 30px;
+    padding: 5% 50px;
+    background:#eeeeee;
+}
+.pdsection .part-two p{
+    margin: 15px 0;
+    color: #707070;
+}

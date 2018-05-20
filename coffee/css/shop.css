@@ -1,0 +1,82 @@
+.shop{
+    margin: 50px 0;
+}
+.pro{
+    margin-top: 15px;
+}
+.shop .pro a:hover{
+    text-decoration: underline;
+}
+.shop .pro h3 a{
+    color: #525252
+}
+.shop .pro p{
+    min-height: 44px;
+}
+.shop .pro p a{
+    color:#707070;
+}
+.addCar{
+    margin-top: 5px;
+    color:#3D1A1B;
+    border: 1px solid #3D1A1B;
+}
+.addCar:hover{
+    color: #fff;
+    background: #3D1A1B;
+}
+.price{
+    line-height: 34px;
+    margin-top: 5px;
+    margin-left: 20%;
+}
+.shop ol {
+    margin:15px 0;
+    padding:0;
+    margin-right: 10%;
+    float:right;
+}
+.shop ol li {
+    float:left;
+    margin-right: 10px;
+}
+.shop ol li:last-child {
+    background: #fff;
+}
+.shop ol li a {
+    border: none;
+    border: 1px solid #3D1A1B;
+    background: #fff;
+    border-radius: 5px;
+    color: #3D1A1B;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.pager .olactive{
+    background:#3D1A1B ;
+    color: #fff;
+}
+.pager li > a:hover{
+    background:#3D1A1B ;
+    color: #fff;
+}
+@media (max-width: 480px){
+    .shop .pro h3 a{
+        font-size: 1.0rem;
+    }
+    .shop .pro p a{
+        font-size: 0.8rem;
+    }
+    .addCar{
+        font-size: 0.6rem;
+        padding: 4px 8px ;
+    }
+    .shop ol li a {
+        padding: 0px 7px;
+    }
+    .price{
+        font-size: 0.8rem;
+        line-height: 31px;
+        margin-top: 5px;
+    }
+}

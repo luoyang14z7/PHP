@@ -1,0 +1,305 @@
+html, body{
+    font-size: 100%;
+    background:	#fff;
+}
+body {
+    font-size: 100%;
+    font-family: 'RobotoSlab-Regular';
+}
+body a{
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+.container:before{
+    content: "";
+    display: table;
+}
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+p{
+    margin:0;
+}
+ul,label,img{
+    margin:0;
+    padding:0;
+}
+body a:hover{
+     text-decoration:none;
+ }
+body a:focus{
+    text-decoration:none;
+}
+.show{
+    display: block;
+}
+.header-logo{
+    padding: 1.5em 0px;
+}
+/* header-nav start*/
+.header-nav{
+    padding: 20px 0;
+    box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.11);
+}
+.iconHum{
+    background: url(../images/nav-icon.png) no-repeat;
+    width: 34px;
+    height: 34px;
+    display: none;
+}
+.nav{
+    position: relative;
+}
+.navActive a{
+    color: #999 !important;
+}
+.nav>.nav-left>.nav-list li{
+    display: inline-block;
+    padding-top: 3px;
+}
+.nav>.nav-left>.nav-list li a{
+    color: #3D1A1B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 0.6rem;
+}
+.nav>.nav-left>.nav-list li a:hover{
+    color: #999;
+}
+.nav>.nav-right{
+    position: relative;
+    line-height: 36px;
+}
+.nav>.nav-right a{
+    color:#3D1A1B;
+    font-weight:bold;
+}
+.nav>.nav-right a:hover{
+    color:#999;
+}
+.logined{
+    display: none;
+}
+.logined span {
+    font-size: 0.8rem;
+}
+
+
+.nav>.shareBox{
+    margin-right: 10px;
+}
+.shareBox ul li a span{
+    background: url(../images/qq1.png) no-repeat;
+    width: 29px;
+    height: 26px;
+    display: block;
+    margin-top: 5px;
+}
+.shareBox ul li a .qq{
+    width: 26px;
+     background-position: -3px -9px;
+ }
+.shareBox ul li a .vx{
+    background-position: -34px -9px;
+}
+.shareBox ul li a .wb{
+    background-position: -72px -9px;
+}
+.shareBox ul li a span:hover{
+    transform: rotatey(360deg);
+    -webkit-transform: rotatey(360deg);
+    -moz-transform: rotatey(360deg);
+    -o-transform: rotatey(360deg);
+    -ms-transform: rotatey(360deg);
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+.banner .banner-bg{
+    position: relative;
+    min-height: 600px;
+    background: url(../images/banner.jpg) no-repeat;
+    margin-top: 5px;
+    background-size: cover;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+.banner .banner-content{
+    position: absolute;
+    width:35%;
+    left: 35%;
+    top:30%;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    padding:2em 0;
+    display: none;
+}
+.banner .banner-content .form-group{
+    padding: 5px;
+}
+.banner .banner-content label{
+    font-size: 0.8rem;
+    color:#3D1A1B;
+}
+.banner .banner-content button{
+    width: 30%;
+}
+.banner .banner-content input:hover{
+    border-color: #b1b1b1;
+    box-shadow: none;
+}
+.banner .banner-content input:focus{
+    border-color: #b89f7a;
+    box-shadow: none;
+}
+.banner .banner-content button{
+    box-sizing: border-box;
+    background: none;
+    border: 2px solid #b89f7a;
+    border-radius: 3px;
+    color: #b89f7a;
+    font-size: 1.0rem;
+    font-weight: 700;
+    height:25px;
+    line-height: 20px;
+    margin: 5px auto;
+    outline: none;
+    width: 40%;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.banner .banner-content button:hover{
+    background: #b89f7a ;
+    color:#fff;
+}
+ .banner-content h4{
+     display: block;
+     border-bottom: 1px solid #000;
+     font-size: 1.2rem;
+     margin: 0 auto;
+     width: 35%;
+}
+.banner-content h2{
+  font-weight: bold;
+    color: #000;
+}
+.banner-content a{
+    margin-top: 5px;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+}
+.btn.btn-default:hover{
+    color: #fff;
+    background: #000;
+}
+.banner .banner-content.loginShow{
+    display: block;
+}
+@media (max-width:1200px) {
+    .banner .banner-bg{
+        min-height: 560px;
+    }
+}
+@media   (max-width:1024px ){
+    .iconHum{
+        display: none;
+        cursor: pointer;
+    }
+    .nav>.nav-left>.nav-list {
+        display: block ;
+    }
+    .nav>.nav-left>.nav-list li {
+        display: inline-block;
+    }
+    .nav>.nav-left>.nav-list li a {
+        padding: 0 0.3rem;
+    }
+    .banner .banner-bg{
+        min-height: 500px;
+    }
+    .banner .banner-content h4{
+         font-size: 1.0rem;
+     }
+    .banner .banner-content h2{
+        font-size: 1.5rem;
+    }
+
+}
+@media  (max-width: 768px){
+    .iconHum{
+        display: block;
+        cursor: pointer;
+    }
+    .nav>.nav-left>.nav-list{
+        margin: 0;
+        z-index: 999;
+        position: absolute;
+        width: 96%;
+        text-align: center;
+        background: #3d1a1b;
+        margin-top: 25px;
+    }
+    .nav>.nav-left>.nav-list li{
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .nav>.nav-left>.nav-list li a {
+        color: #999999;
+        font-size: 0.8rem;
+        transition: 0.5s all ease;
+        -webkit-transition: 0.5s all ease;
+        -moz-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
+        -ms-transition: 0.5s all ease;
+        width: 100%;
+        display: block;
+    }
+    .nav>.nav-left>.nav-list li a:hover {
+        color: #fff;
+    }
+    .banner .banner-bg{
+        min-height: 390px;
+    }
+}
+@media (max-width: 640px){
+    .nav>.nav-right{
+        width: 40%;
+    }
+    .banner .banner-bg{
+        min-height: 390px;
+    }
+
+
+}
+@media (max-width: 480px){
+   .nav .nav-right input{
+        padding: 5px 0;
+    }
+    .nav .shareBox ul li{
+        padding: 0;
+    }
+    .banner .banner-bg{
+        min-height: 250px;
+    }
+
+}
+@media (max-width: 320px){
+    .banner .banner-bg{
+        min-height: 190px;
+    }
+
+
+}

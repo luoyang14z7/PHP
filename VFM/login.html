@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <title>云盘</title>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="layer/layer.js"></script>
+</head>
+<body style="background-image:url(images/U-1.jpg);background-repeat:no-repeat;background-size: 2000px 1000px;">
+<form action="login.php" method="post" class="smart-green" style="margin-top: 200px;0px; ">
+    <h1>云盘
+        <span>yunpan</span>
+    </h1>
+    <label>
+        <span>User Name :</span>
+        <input id="username" type="text" name="username" placeholder="Please Enter UserName" />
+    </label>
+    <label>
+        <span>Password :</span>
+        <input id="password" type="password" name="password" placeholder="Enter Your Password" />
+    </label>
+    <span>&nbsp;</span>
+    <input type="submit" class="button" value="Login" />
+    <input type="button" id="parentIframe" class="button"  id="func1" value="Register" />
+    <script>
+        //弹出一个iframe层
+        $('#parentIframe').on('click', function(){
+            layer.open({
+                type: 2,
+                title: '用户注册',
+                maxmin: true,
+                shadeClose: true, //点击遮罩关闭层
+                area : ['500px' , '420px'],
+                content: 'adduser.html'
+            });
+        });
+    </script>
+
+    </label>
+</form>
+</body>
+</html>

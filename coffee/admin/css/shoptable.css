@@ -1,0 +1,35 @@
+
+table.imagetable {
+    font-family: "Courier New", monospace;
+    font-size:12px;
+    color:#333333;
+    border-width: 1px;
+    border-color:#E0E0E0;
+    border-collapse: collapse;
+
+}
+table.imagetable th {
+    background:#dcddc0 url('../img/3.jpg');
+    border-width: 1px;
+    padding-top: 8px;
+    border-style: solid;
+    border-color:#E0E0E0;
+    text-align: center;
+    vertical-align: center;
+
+
+}
+table.imagetable td {
+    background:#dcddc0 url('../img/3.jpg');
+    border-width: 1px;
+    padding-top: 8px;
+    border-style: solid;
+    border-color:#E0E0E0;
+    text-align: center;
+    vertical-align: center;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+}
+

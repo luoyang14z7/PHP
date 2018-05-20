@@ -1,0 +1,165 @@
+<div ng-controller="galleryCtr" class="gallery">
+    <div class="container">
+        <div class="gallery-head head">
+            <h3>OUR GALLERY</h3>
+        </div>
+        <div class="dirBox">
+            <ul class="list-unstyled list-inline ">
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-10.jpg"/>
+                        <div>
+                            <h5>榛果风味拿铁</h5>
+                            <span>榛果风味的芬芳弥漫于拿铁的醇香，温暖美好。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-11.jpg"/>
+                        <div>
+                            <h5>浓缩咖啡</h5>
+                            <span>这是咖啡的精粹，以浓缩的方式显现。星巴克浓缩咖啡带点焦糖味道，浓厚馥郁。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-12.jpg"/>
+                        <div>
+                            <h5>摩卡可可碎片星冰乐</h5>
+                            <span>覆以搅打奶油及摩卡酱，香浓巧克力碎片与醇厚浓缩咖啡冰沙丝丝相融，覆以搅打奶油及焦糖糖稀，沁凉甜蜜。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-13.jpg"/>
+                        <div>
+                            <h5>抹茶星冰乐</h5>
+                            <span>清新的绿茶风味融合了搅打奶油的柔滑。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-14.jpg"/>
+                        <div>
+                            <h5>拿铁</h5>
+                            <span>这是一种传统的经典饮料——浓缩咖啡调入热牛奶，其上覆盖一层轻盈的奶沫。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-15.jpg"/>
+                        <div>
+                            <h5>卡布奇诺</h5>
+                            <span>星级咖啡师手工调制，三分之一浓缩咖啡，三分之一新鲜蒸奶，三分之一细腻奶泡。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-16.jpg"/>
+                        <div>
+                            <h5>焦糖玛奇朵</h5>
+                            <span>在蒸奶中加入浓缩咖啡和香草糖浆，然后覆盖上一层风格独特的焦糖图案，口味香甜，像丝般顺滑，风味醇厚。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-17.jpg"/>
+                        <div>
+                            <h5>摩卡</h5>
+                            <span>这款咖啡由醇香的摩卡酱，浓缩咖啡和蒸奶相融相合，上面覆以搅打奶油。</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="img-responsive img-rounded" src="images/g-18.jpg"/>
+                        <div>
+                            <h5>浓郁咖啡摩卡</h5>
+                            <span>让摩卡多一份浓缩咖啡，更添浓厚馥郁。</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+/*    function dir(ele){
+        this.el=$(ele);
+        this.width=$(ele).width();
+        this.height=$(ele).height();
+    };
+    dir.prototype.init=function(){
+        this.addEvent();
+    };
+    dir.prototype.addEvent=function(){
+        var dir=this;
+        this.el.on('mouseenter mouseleave',function(e){
+            dir.getPos(e.target);
+            var w = dir.width,
+                    h = dir.height,
+                    x = ( e.pageX - $(this).offset().left - ( w/2 )) * ( w > h ? ( h/w ) : 1 ),
+                    y = ( e.pageY - $(this).offset().top  - ( h/2 )) * ( h > w ? ( w/h ) : 1 );
+            dir.way = Math.round( ( ( ( Math.atan2(y, x) * (180 / Math.PI) ) + 180 ) / 90 ) + 3 ) % 4;
+            if(e.type=="mouseenter") {
+                dir.changeDir(dir.way,0);
+                dir.showDir();
+            }else{
+                dir.changeDir(dir.way,1)
+            }
+        })
+    };
+    dir.prototype.getPos=function(e){
+        var parent= e.parentNode;
+        var el=e;
+        this.elLeft=0;
+        this.elTop=0;
+        while(parent){
+            this.elLeft+=el.offsetLeft;
+            this.elTop+=el.offsetTop;
+            el=parent;
+            parent=el.parentNode;
+            if(el.className == "dirBox")
+                return true
+        }
+    };
+    dir.prototype.changeDir=function(ori,type){
+        switch(ori){
+            case 0:
+                this.childPos={ top:'-100%', left:'0%'};
+                break;
+            case 1:
+                this.childPos={ top:'0%', left:'100%'};
+                break;
+            case 2:
+                this.childPos={ top:'100%', left:'0%'};
+                break;
+            case 3:
+                this.childPos={ top:'0%', left:'-100%'};
+                break;
+        }
+        if(type===0)
+            $(this.el).find('div').hide().css(this.childPos)
+        else
+            $(this.el).find('div').css(this.childPos)
+    };
+    dir.prototype.showDir=function(){
+        $(this.el).find('div').show(0,function(){
+            $(this).css({
+                top:'0%',
+                left:'0%'
+            });
+        })
+    }
+    $('.dirBox ul li').each(function(){
+        var obj= new dir(this);
+        obj.init();
+    })*/
+</script>

@@ -1,0 +1,31 @@
+软件名称：PHP探针 B-check
+
+软件版本：v0.05.5
+
+软件作者：南方第三
+
+作者URL ：http://rubyfans.com
+
+软件图片URL：http://rubyfans.com/b-check/images/preview.png
+
+下载地址：http://rubyfans.com/b-check/b-check.rar
+
+
+软件简介：
+
+Windows机器上测信息最多的PHP探针！
+
+特色功能：
+1、繁简体一键切换
+2、能够探测：CPU版本信息
+3、能够探测：CPU核心数
+4、能够探测：磁盘个数
+5、能够探测：磁盘总空间和剩余空间
+6、能够探测：各个磁盘分区的总空间和剩余空间
+7、能够探测：Zend Optimizer版本
+8、能够列举：所有已编译模块
+9、能够测试：整数运算能力、浮点运算能力、数据I/O能力
+10、能够测试：服务器网络速度 
+
+v0.05.5改进：
+1、取消发送使用通知邮件。

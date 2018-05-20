@@ -1,0 +1,202 @@
+.section{
+    margin-top: 40px;
+}
+.section .section-lp1 {
+    text-align: center;
+}
+.section .section-lp1>p {
+    display: block;
+    margin: 0 auto;
+    color:#A59999;
+    border-bottom: 1px solid #999999;
+    width: 25%;
+}
+.section .section-lp1>h3 {
+    margin-top: 10px;
+    color: #3D1A1B;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.section .section-lp2 p{
+    margin-top: 2%;
+    font-size: 0.9rem;
+    color: #999CA8;
+    line-height: 26px;
+}
+.section .section-lp2 a{
+    margin-top: 5px;
+    color:#191D2E;
+}
+.section .section-lp2 a:hover{
+    color:#999999;
+}
+.section .section-lp2 .btn.btn-default{
+    padding: 9px 30px;
+    margin-top: 10px;
+}
+.section .shareBox{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.section .shareBox span{
+    margin-right: 10px;
+    line-height: 32px;
+    color: #99A5BC;
+}
+.section .section-lp3{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.section-lp3 .row div{
+    margin-bottom: 20px;
+}
+.section .section-lp3 h5{
+    border-bottom: 1px solid #999999;
+    color:#A8A8A8;
+    width: 30%;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+.section .section-lp3  img{
+    width: 100%;
+}
+.section .section-lp3 h3{
+    margin-top: 0px;
+    color:#3D1A1B;
+    font-weight: bold;
+}
+.section .section-lp3 p{
+    font-size: 0.9rem;
+    color:#999CA8;
+}
+.section .section-lp3 label{
+    font-size: 0.9rem;
+    font-family: 'Raleway-Regular';
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section .spanBtn{
+    display: block;
+    color:#fff;
+    background:#190608 ;
+    border: 1px solid  #190608;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 8px 0;
+    margin-bottom: 30px;
+}
+.section .section-rp1{
+    margin-top: 10px;
+}
+.section .section-rp2{
+    margin-top: 20px;
+}
+.section .section-rp3{
+    margin-top: 30px;
+}
+.section .rp1-content p{
+    font-size: 0.9rem;
+    color: #9F9F9F;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+.section .rp2-content .media-heading{
+    margin-top: 5px;
+    color:#3D1A1B;
+}
+.section .rp2-content .media-body p{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color:#9F9F9F;
+}
+.section .rp3-content ul li{
+    background: url(../images/dot.png) no-repeat;
+    background-position:0 6px;
+    padding-left: 23px ;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.section .rp3-content ul li span{
+    font-size: 14px;
+    color: #A7A7A7;
+}
+.section .rp3-content ul li span:hover{
+    color:#524445;
+}
+.section .rp4-content{
+    margin: 0 30px;
+}
+.section .rp4-content input{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 4px 5px;
+}
+.section .rp4-content input:focus{
+    outline: none;
+}
+.section .rp4-content a{
+    margin-top: 15px;
+    color: #fff;
+    background: #190608;
+    font-weight:bold;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.section .rp4-content a:hover{
+    background:#999999 ;
+}
+
+@media (max-width: 1024px){
+    .section .section-lp3 h5 {
+        width: 25%;
+    }
+}
+@media  (max-width: 480px) {
+    .section .section-lp3 div div {
+        width: 50%;
+        float: left;
+    }
+    .section .section-lp3 h5{
+        width: 50%;
+    }
+    .section .section-lp3 h3 {
+    	font-size:16px;
+    }
+}
+body{
+    position:relative;
+}
+.addSuccess{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    border: 1px solid #3D1A1B;
+    border-radius: 6px;
+    padding: 10px 15px;
+    z-index: 50;
+    font-size: 0.8rem;
+    color: #fff;
+    background: rgb(37,17,19);
+    opacity: 0;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}

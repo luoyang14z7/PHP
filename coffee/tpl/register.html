@@ -1,0 +1,31 @@
+<div class="register" ng-controller="registerCtr">
+    <div class="container">
+        <div class="section">
+            <h1 class="text-center">加入会员俱乐部</h1>
+            <span class="line"></span>
+            <div class="regSection text-center">
+                <p class="msg">输入您的信息</p>
+                <div class="regbox container">
+                    <form>
+                        <div class="form-group text-left">
+                            <label for="uphone">手机号</label>
+                            <input type="text" id="uphone" name="uphone" ng-model="user.uphone" class="form-control" placeholder="请输入手机号">
+                            <span class="form-control errorInfo" ng-if="checkP.flag" >{{checkP.msg}}</span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="upwd">密码</label>
+                            <input type="password" id="upwd" name="upwd" ng-model="user.upwd" class="form-control" placeholder="请输入6-12位密码">
+                            <span class="form-control errorInfo" ng-if="checkW.flag">{{checkW.msg}}</span>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="confirm">确认密码</label>
+                            <input type="password" id="confirm" name="cpwd" ng-model="user.cpwd"  class="form-control" placeholder="请再次输入密码">
+                            <span class="form-control errorInfo" ng-if="checkCW.flag">{{checkCW.msg}}</span>
+                        </div>
+                        <button type="button" ng-click="sub(1)">注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

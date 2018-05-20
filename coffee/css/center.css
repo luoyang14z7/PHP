@@ -1,0 +1,163 @@
+.center{
+    margin-top: 5%;
+}
+.center .mylist h4{
+    color: #6D676A;
+}
+.center .mylist ul{
+    margin-left: 20px;
+}
+.center .mylist li{
+    margin-top: 10px;
+}
+.center .mylist li a{
+    color:#3D1A1B;
+    font-size: 0.8rem;
+}
+.center .mylist li a:hover{
+    color: #999;
+}
+.add-order{
+    width:100%;
+    margin:0px auto;
+    margin-top:20px;
+}
+.mycart{
+    padding:10px;
+    border: 1px solid #E6E6E6;
+}
+.mycart .confirmInfo{
+    font-size: 1.2rem;
+
+}
+.bline{
+    border-bottom: 1px solid #E6E6E6;
+}
+.userInfo .group{
+    margin: 10px;
+}
+.group label{
+    font-size: 0.8rem;
+    color:#888;
+}
+.group input{
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    border:1px solid #E6E6E6;
+    width: 30%;
+    padding: 2px 5px ;
+    font-size: 0.9rem;
+}
+.group input:focus{
+    border: 1px solid #3D1A1B;
+}
+.pay{
+    padding: 10px 0;
+}
+.pay ul{
+    margin-left: 15px;
+}
+.pay ul li{
+    border: 2px solid #ddd;
+    font-size: 0.9rem;
+    color:#3D1A1B;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+.list{
+    padding: 15px 0;
+}
+.listitem img{
+    max-height: 170px;
+}
+.listitem .itemname p{
+    font-size: 0.9rem;
+    color:#6D676A;
+}
+.listitem .num .icon{
+    padding: 3px 3px;
+    border:1px solid #ddd;
+    font-size: 0.4rem;
+    cursor: pointer;
+}
+.listitem .del{
+    font-size: 0.7rem;
+    color:#999;
+    cursor: pointer;
+}
+.submit{
+    padding: 15px;
+    overflow: hidden;
+}
+.submit p{
+    padding: 5px;
+    color:#3D1A1B;
+}
+.submit span:hover{
+    color:#fff;
+    background: #3D1A1B;
+}
+.pay ul .payactive{
+    border:2px solid #e4393c;
+}
+.myorder{
+    padding:10px;
+    border: 1px solid #E6E6E6;
+}
+.myorder .top{
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 10px;
+}
+.myorder .top .row{
+    margin: 0;
+}
+.myorder .top div{
+    font-size: 0.7rem;
+    color: #3D1A1B;
+    padding: 0;
+}
+.myorder .orderSection .row{
+    border-bottom: 1px solid #E6E6E6;
+    margin: 0;
+    margin-top: 10px;
+}
+.myorder .orderSection div{
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+@media (max-width: 680px){
+    .center .mylist h4{
+        font-size: 0.8rem;
+    }
+    .center .mylist ul{
+        margin-left: 0px;
+    }
+    .center .mylist li a {
+        font-size: 0.5rem;
+    }
+    .listitem .row div{
+        padding:0 5px;
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+
+}
+@media (max-width: 480px){
+    .group input{
+        width: 60%;
+    }
+    .pay ul li{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+

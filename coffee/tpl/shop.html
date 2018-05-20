@@ -1,0 +1,20 @@
+<div class="shop" ng-controller="shopCtr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-6 text-center pro" ng-repeat="product in productlist">
+                <a  href="#/pdetail/{{product.pid}}">
+                    <img class="img-responsive img-rounded center-block" ng-src="{{product.img}}"/>
+                </a>
+                <h3><a href="#/pdetail/{{product.pid}}" ng-bind="product.pname">
+
+                    </a></h3>
+                    <p><a href="#/pdetail/{{product.pid}}" ng-bind="product.ptitle">
+                    </a></p>
+                <span class="pull-left price" ng-bind="'￥:'+product.price"></span>
+                <span class="btn  pull-right addCar" ng-click="addcart()" data-product="{{product.pid}}">加入购物车</span>
+            </div>
+        </div>
+    </div>
+    <ol class="pager">
+    </ol>
+</div>

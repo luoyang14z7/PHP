@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="coffee/css/normalize.css"/>
+    <!-- Bootstrap -->
+    <link  href="coffee/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="coffee/css/head.css"/>
+    <link rel="stylesheet" href="coffee/css/index.css"/>
+    <link rel="stylesheet" href="coffee/css/slide.css"/>
+    <link rel="stylesheet" href="coffee/css/gallery.css"/>
+    <link rel="stylesheet" href="coffee/css/about.css"/>
+    <link rel="stylesheet" href="coffee/css/snake.css"/>
+    <link rel="stylesheet" href="coffee/css/register.css"/>
+    <link rel="stylesheet" href="coffee/css/shop.css"/>
+    <link rel="stylesheet" href="coffee/css/pdetail.css"/>
+    <link rel="stylesheet" href="coffee/css/center.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="coffee/js/html5shiv.min.js"></script>
+      <script src="coffee/js/respond.min.js"></script>
+    <![endif]-->
+    <script  src="coffee/js/angular.js"></script>
+    <script  src="coffee/js/angular-route.js"></script>
+    <script  src="coffee/js/main.js"></script>
+
+</head>
+<body ng-controller="mainCtr">
+    <span class="addSuccess ">
+        Ìí¼Ó³É¹¦
+    </span>
+    <div ng-include="'coffee/tpl/header.html'"></div>
+    <!-- section start -->
+    <div ng-view></div>
+    <!-- section end -->
+    <!-- slide start -->
+    <!-- slide end -->
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="coffee/js/bootstrap.min.js"></script>
+<script src="coffee/js/main.js"></script>
+<script>
+   /* (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();*/
+</script>
+
+
+</html>

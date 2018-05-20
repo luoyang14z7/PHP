@@ -1,0 +1,116 @@
+.gallery{
+    padding: 64px;
+    text-align: center;
+}
+.head h3{
+    width: 17%;
+    color: #fff;
+    background: #190608;
+    padding: 9px 0px;
+    border: 1px solid #190608;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'RobotoSlab-Regular';
+}
+.dirBox{
+    margin-top: 60px;
+}
+.dirBox ul{
+    position: relative;
+    overflow: hidden;
+}
+.dirBox ul li{
+    float: left;
+    margin: 0.4%;
+    background: #EFEFEF;
+    padding: 8px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(231, 231, 231, 0.43);
+    width: 32.4%;
+}
+.dirBox ul li a{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.dirBox ul li a div{
+    display: block;
+    left: 100%;
+    top: 0px;
+    transition: all 300ms ease;
+    position: absolute;
+    background: rgba(25, 6, 8, 0.9);
+    width: 100%;
+    height: 100%;
+}
+.dirBox ul li a div h5{
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 2.0em 0 0 0;
+    font-family: 'Audiowide-Regular';
+    text-align: center;
+}
+.dirBox ul li a div span{
+    display: block;
+    padding: 10px 0;
+    margin: 11px 20px 20px 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    font-size: 12px;
+}
+@media (max-width: 680px){
+    .gallery {
+        padding: 32px;
+    }
+    .head h3{
+        width: 40%;
+        font-size: 13px;
+    }
+    .dirBox ul li{
+        width:49.2%
+    }
+    .dirBox ul li a div h5{
+        margin: 1.0em 0 0 0;
+        font-size: 0.7em;
+    }
+    .dirBox ul li a div span{
+        font-size: 0.6rem;
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
+@media (max-width: 320px){
+    .gallery {
+        padding: 20px;
+    }
+    .dirBox ul li a div h5 {
+        margin: 1.0em 0 0 0;
+        font-size: 0.7em;
+    }
+    .dirBox ul li a div span{
+        font-size:10px;
+        padding: 5px;
+    }
+    .head h3{
+        width: 50%;
+        font-size: 10px;
+    }
+    .dirBox ul li{
+        width:100%
+    }
+}

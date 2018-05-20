@@ -1,0 +1,6 @@
+SET NAMES UTF8;
+USE coffee;
+CREATE TABLE shopcart(
+    cid INT PRIMARY KEY AUTO_INCREMENT,
+    uid VARCHAR(32)
+)
